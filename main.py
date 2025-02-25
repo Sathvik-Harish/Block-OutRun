@@ -344,17 +344,3 @@ if __name__ == "__main__":
         quit_game()
         import os
 
-# 🛑 IMPORTANT: Set Pygame to run in headless mode (no GUI)
-os.environ["SDL_VIDEODRIVER"] = "dummy"
-
-import pygame
-
-# Initialize pygame (important after setting SDL_VIDEODRIVER)
-pygame.init()
-
-# Example: Create a surface (ensure it doesn't display anything)
-screen = pygame.Surface((800, 600))
-
-# Your game logic here...
-print("Pygame running in headless mode")
-
